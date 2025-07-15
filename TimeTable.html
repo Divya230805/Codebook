@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .left-header, .right-header {
+            width: 30%;
+        }
+        .center-header {
+            text-align: center;
+            font-size: 18px;
+            flex-grow: 1;
+        }
+        .class-info {
+            background-color: #000;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        th, td {
+            border: 2px solid #000;
+            padding: 4px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .time-header, .day-header {
+            background-color: #87CEEB;
+            font-weight: bold;
+        }
+        .subject-blue { background-color: #87CEEB; }
+        .subject-orange { background-color: #FFA500; }
+        .subject-yellow { background-color: #FFFF00; }
+        .subject-green { background-color: #90EE90; }
+        .subject-pink { background-color: #FFB6C1; }
+        .subject-red { background-color: #FF6347; }
+        .lunch { background-color: #DDA0DD; }
+        .break { background-color: #F0E68C; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-header">
+            TCET/IT/FRM/TP-02/06 – (CLASS)<br>
+            TCET/ of July 2025
+        </div>
+        <div class="center-header">
+            CLASS TIME TABLE
+        </div>
+        <div class="right-header">
+            Revision: A<br>
+            Date: 04/07/2025<br>
+            Class Incharge: Mrs. Apeksha Waghmare<br>
+            Venue: 620
+        </div>
+    </div>
+
+    <div class="class-info">
+        CLASS: T.E- IT B (SEM V)
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="time-header">TIME<br>DAYS</th>
+                <th class="time-header">08:30 am to 09:30 am</th>
+                <th class="time-header">09:30 am to 10:30 am</th>
+                <th class="time-header">10:30 am to<br>10:45 am</th>
+                <th class="time-header">10:45 am to 11:45 am</th>
+                <th class="time-header">11:45 am to 12:45 pm</th>
+                <th class="time-header">12:45 pm to<br>1:15 pm</th>
+                <th class="time-header">1:15 pm to 2:15 pm</th>
+                <th class="time-header">2:15 pm to 3:15 pm</th>
+                <th class="time-header">3:15 pm to<br>4:15 pm</th>
+                <th class="time-header">4:15 pm to<br>5:15 pm</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="day-header">MONDAY</td>
+                <td class="subject-blue">SL/CL</td>
+                <td class="subject-blue">OS – RA</td>
+                <td rowspan="6" class="break">SHORT<br>BREAK</td>
+                <td class="subject-orange">AT – NB</td>
+                <td class="subject-green">WP – AW</td>
+                <td rowspan="6" class="lunch">LUNCH<br>BREAK</td>
+                <td class="subject-yellow">CNS B1/B2 RN/PK 205<br>WP B3/B4 AW 221</td>
+                <td class="subject-yellow">CNS B1/B2 RN/PK 205<br>WP B3/B4 AW 221</td>
+                <td class="subject-blue">SL/CL</td>
+                <td class="subject-blue">SL/CL</td>
+            </tr>
+            <tr>
+                <td class="day-header">TUESDAY</td>
+                <td class="subject-orange">AT – NB (DS)</td>
+                <td class="subject-blue">CNS – RN</td>
+                <td class="subject-orange">OS-PK</td>
+                <td class="subject-green">SSIC-TnS</td>
+                <td class="subject-yellow">FSD/PS-III JT/PP 220<br>FSD/PS-III KrD/PK 205</td>
+                <td class="subject-yellow">FSD/PS-III JT/PP 220<br>FSD/PS-III KrD/PK 205</td>
+                <td class="subject-blue">SL/CL</td>
+                <td class="subject-blue">SL/CL</td>
+            </tr>
+            <tr>
+                <td class="day-header">WEDNESDAY</td>
+                <td class="subject-blue">CNS-RN (DS)</td>
+                <td class="subject-orange">AT – NB</td>
+                <td class="subject-green">SSIC – TnS</td>
+                <td class="subject-green">WP-AW</td>
+                <td class="subject-orange">OS-PK (DS)</td>
+                <td class="subject-pink">IC<br>(4:30 PM TO<br>5:30 PM)</td>
+                <td class="subject-blue">SL/CL</td>
+                <td class="subject-blue">SL/CL</td>
+            </tr>
+            <tr>
+                <td class="day-header">THURSDAY</td>
+                <td class="subject-blue">SL/CL</td>
+                <td class="subject-blue">CNS – RN</td>
+                <td class="subject-green">SSIC-TnS</td>
+                <td class="subject-red">AT-(T) NB B1 620<br>KrD B2 618</td>
+                <td class="subject-orange">OS – PK</td>
+                <td class="subject-green">WP – AW</td>
+                <td class="subject-yellow">CNS B3/B4 RN 220<br>OS B1/B2 PK/AA 204</td>
+                <td class="subject-yellow">CNS B3/B4 RN 220<br>OS B1/B2 PK/AA 204</td>
+            </tr>
+            <tr>
+                <td class="day-header">FRIDAY</td>
+                <td class="subject-green">SSIC – TnS (DS)</td>
+                <td class="subject-green">WP-AW (DS)</td>
+                <td class="subject-blue">CNS-RN</td>
+                <td class="subject-orange">AT-NB</td>
+                <td class="subject-yellow">OS B3/B4 PK/KD 203<br>WP B1/B2 AW/NB 221</td>
+                <td class="subject-yellow">OS B3/B4 PK/KD 203<br>WP B1/B2 AW/NB 221</td>
+                <td class="subject-blue">SL/CL</td>
+                <td class="subject-blue">SL/CL</td>
+            </tr>
+            <tr>
+                <td class="day-header">SATURDAY</td>
+                <td class="subject-blue">SL/CL</td>
+                <td class="subject-orange">IP/FSD/PBL</td>
+                <td class="subject-orange">IP/FSD/PBL</td>
+                <td class="subject-orange">IP/FSD/PBL</td>
+                <td class="subject-orange">IP/FSD/PBL</td>
+                <td class="subject-orange">IP/FSD/PBL</td>
+                <td class="subject-blue">SL/CL</td>
+                <td class="subject-blue">SL/CL</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
